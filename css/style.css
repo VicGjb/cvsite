@@ -1453,7 +1453,7 @@ body {
   }
 }
 
-.main {
+.form_main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1465,10 +1465,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.main .form_wrapper {
+.form_main .form_wrapper {
   margin: 5px 20px;
 }
-.main .row {
+.form_main .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1476,36 +1476,36 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.main .form_lable {
+.form_main .form_lable {
   margin: auto 0;
 }
 @media (min-width: 1180px) {
-  .main .form_lable {
+  .form_main .form_lable {
     font-size: calc(12px + 9.6 * ((100vw - 320px) / 960));
   }
 }
 @media (max-width: 1180px) {
-  .main .form_lable {
+  .form_main .form_lable {
     font-size: calc(12px + 9.6 * ((100vw - 320px) / 960));
   }
 }
-.main .form_lable_summary {
+.form_main .form_lable_summary {
   margin-top: 18px;
 }
 @media (min-width: 1180px) {
-  .main .form_lable_summary {
+  .form_main .form_lable_summary {
     font-size: calc(12px + 9.6 * ((100vw - 320px) / 960));
   }
 }
 @media (max-width: 1180px) {
-  .main .form_lable_summary {
+  .form_main .form_lable_summary {
     font-size: calc(12px + 9.6 * ((100vw - 320px) / 960));
   }
 }
-.main .form_input {
+.form_main .form_input {
   width: 70%;
 }
-.main input[type=text], .main textarea {
+.form_main input[type=text], .form_main textarea {
   width: 100%;
   margin-top: 20px;
   border: 1px solid #ccc;
@@ -1516,16 +1516,16 @@ body {
   background-color: #08aeab18;
 }
 @media (min-width: 1180px) {
-  .main input[type=text], .main textarea {
+  .form_main input[type=text], .form_main textarea {
     padding: calc(4px + 7.2 * ((100vw - 320px) / 960));
   }
 }
 @media (max-width: 1180px) {
-  .main input[type=text], .main textarea {
+  .form_main input[type=text], .form_main textarea {
     padding: calc(4px + 7.2 * ((100vw - 320px) / 960));
   }
 }
-.main .row_submit {
+.form_main .row_submit {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1534,7 +1534,7 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.main input[type=submit] {
+.form_main input[type=submit] {
   background-color: #0a5eac;
   color: white;
   padding: 20px;
@@ -1543,7 +1543,7 @@ body {
   cursor: pointer;
   width: 70%;
 }
-.main input[type=submit]:hover {
+.form_main input[type=submit]:hover {
   background-color: #3a91e2;
 }
 
