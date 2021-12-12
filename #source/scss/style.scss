@@ -670,6 +670,15 @@ body{
 
 
 //========================================================================
+
+.form_title{
+    margin: 0 auto;
+    padding-top: 20px;
+    // @include adaptiv(50px,5px,margin-top);
+    color: #08aeac;
+    @include adaptiv(26,14 ,font-size )
+}
+
 .form_main{
     display: flex;
     flex-direction: column;
@@ -716,6 +725,7 @@ body{
     }
     input[type=submit] {
         background-color: #0a5eac;
+        @include adaptiv(15,10 ,margin-bottom);
         color: white;
         padding: 20px;
         border: none;
@@ -731,9 +741,5 @@ body{
 }
 
 
-.form_title{
-    margin: 0 auto;
-    color: #08aeac;
-    @include adaptiv(26,14 ,font-size )
-}
+
 
