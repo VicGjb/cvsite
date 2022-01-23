@@ -28,135 +28,103 @@
                                 <a href="#" class="header_link">Create your CV</a>
                             </li>
                             <li>
-                                <a href="#" class="header_link">About</a>
+                                <a href="person_detaile.html" class="header_link">About</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
         </header>
 
-        <div class="form_main">
-            <div class="content">
-                <div class="form_title">
-                    CV creator
-                </div>
-                <div class="form_wrapper">
-                    <form class="main_form" action="#" method="post" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="form_lable">
+        <div class="main">
+            <div class="form_content_wrapper">
+                <div class="form_content">
+                    <div class="form_title">
+                        CV creator
+                    </div>
+                    <div class="form_wrapper">
+                        <form class="form_main" action="#" method="post" enctype="multipart/form-data">
+                            <div class="row">
                                 <label for="name">Name:*</label> 
-                            </div>
-                            <div class="form_input">
                                 <input type="text" name="name" id="name" />
-                            </div>   
-                        </div>
-                        
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="surname">Surname:*</label> 
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="surname" id="surname"/>
+                            
+                            <div class="row">
+                                    <label for="surname">Surname:*</label>      
+                                    <input type="text" name="surname" id="surname"/>      
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="address">Address:*</label> 
+                            <div class="row">      
+                                    <label for="photo">Photo:*</label> 
+                                    <input type="file" name="avatar" id="avatar"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="address" id="address"/>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="phone">Phone:*</label> 
+                            <div class="row">
+                                    <label for="Profession">Profession:*</label> 
+                                    <input type="text" name="profession" id="profession"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="phone" id="phone"/>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="profession">Profession:*</label> 
-                            </div>
-                            <div class="form_input">
-                                <input type="text" name="profession" id="profession"/>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="facebook">Facebook:</label> 
+                            <div class="row">
+                                    <label for="email">E-mail:*</label> 
+                                    <input type="text" name="email" id="email"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="facebook" id="facebook"/>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="linkedin">Linkedin:</label> 
+                            <div class="row">
+                                    <label for="city">Address:*</label> 
+                                    <input type="text" name="city" id="city"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="linkedin" id="linkedin"/>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="instagram">Instagram:</label> 
+                            <div class="row">
+                                    <label for="phone">Phone:*</label> 
+                                    <input type="text" name="phone" id="phone"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="instagram" id="instagram"/>
+                            
+                            <div class="row">
+                                    <label for="facebook">Facebook:</label> 
+                                    <input type="text" name="facebook" id="facebook"/>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="twitter">Twitter:</label> 
+                            <div class="row">
+                                    <label for="linkedin">Linkedin:</label> 
+                                    <input type="text" name="linkedin" id="linkedin"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="twitter" id="twitter"/>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable">
-                                <label for="github">Github:</label> 
+                            <div class="row">
+                                    <label for="instagram">Instagram:</label> 
+                                    <input type="text" name="instagram" id="instagram"/>
                             </div>
-                            <div class="form_input">
-                                <input type="text" name="github" id="github"/>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="form_lable_summary">
-                                <label for="summary">Summary:*</label> 
+                            <div class="row">
+                                    <label for="twitter">Twitter:</label> 
+                                    <input type="text" name="twitter" id="twitter"/>
                             </div>
-                            <div class="form_input">
-                                <textarea name="summary" id="summary" style="height: 100px;"></textarea>
+
+                            <div class="row">
+                                    <label for="github">Github:</label> 
+                                    <input type="text" name="github" id="github"/>                                
                             </div>
-                        </div>
-                        
-                        <div class="row_submit">
-                            <input type="submit" value="Submit">
-                        </div>
-                    </form>
-                </div>    
+
+                            <div class="row">
+                                <div class="form_lable_summary">
+                                    <label for="summary">Summary:*</label> 
+                                </div>
+                                    <textarea name="summary" id="summary" style="height: 100px;"></textarea> 
+                            </div>
+                            
+                            <div class="row_submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>    
+                </div>        
             </div>
-
-                
         </div>
 
         <footer class="footer">
             <div class="footer__text">
                 <p>Created by Victor Brandt. Suchki.</p>
-            </div>
-            
+            </div> 
         </footer>
+    </div>
 </body>
 
 </html>

@@ -210,10 +210,8 @@ body{
         }
     }
 }
-
-
-
 // ---------main cintent----------------------------------
+
 .main{
     flex: 1 1 auto;
 }
@@ -246,6 +244,7 @@ body{
 .person_name{
     margin: 0px auto;
     margin-top: 10px;
+    text-align: center;
     p{
         @include adaptiv(22, 14, font-size);
         span{
@@ -297,13 +296,11 @@ body{
 }
 
 .social{
-    // margin: 0 auto;
     margin: 0px 0px;
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin-bottom: 10px;
-    // background-color: blue;
     .social_fb{
         @include adaptiv(26,12 ,height );
         @include adaptiv(26,12 ,width );
@@ -656,8 +653,10 @@ body{
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
 .footer{
-    @include adaptiv(30,15 , margin-top);
-    @include adaptiv(50,30,height );
+
+    margin-top: 10px;
+    @include adaptiv(50,20, height);
+    // @include adaptiv(400,300, width);
     background-color: #58867898;
     display: flex;
     justify-content: center;
@@ -670,75 +669,209 @@ body{
 
 
 //========================================================================
+// input, label{
+//     display: inline;
+// } 
+
+.form_content{
+    display: flex;
+    flex-direction: column;    
+    background-color: #ffffff;
+    @include adaptiv(36,12, font-size);
+    @include adaptiv(400,300, width);
+    @include adaptiv(160,120, margin-top );
+    margin: 0px auto;
+
+    .row{
+    padding: 0 20px;
+    // margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+
+}
 
 .form_title{
     margin: 0 auto;
     padding-top: 20px;
-    // @include adaptiv(50px,5px,margin-top);
+    @include adaptiv(50px,5px,margin-top);
     color: #08aeac;
     @include adaptiv(26,14 ,font-size )
 }
 
-.form_main{
+
+label {
+    display: block;
+    margin: auto 0;
+    @include adaptiv(18,12 ,font-size )
+}
+.form_lable_summary{
+    margin-top: 18px;
+    @include adaptiv(18,12 ,font-size )
+}
+
+input{
+    display: block;
+    width: 70%;
+}
+
+input[type=text], textarea{
+    display: block;
+    width: 70%;
+    margin-top: 20px;
+    @include adaptiv(10,4 ,padding );
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #08aeab18;
+}
+
+
+input[type=file]{
+    margin-top: 20px;
+}
+
+
+.row_submit{
+    margin-top: 20px;
+    padding: 0 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
+}
 
+input[type=submit] {
+    background-color: #0a5eac;
+    @include adaptiv(15,10 ,margin-bottom);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+}
 
-    .form_wrapper{
-        margin: 5px 20px;
-    }
-    .row{
-        display: flex;
-        justify-content: space-between;
-    }
-    .form_lable{
-        margin: auto 0;
-        @include adaptiv(18,12 ,font-size )
-    }
-    .form_lable_summary{
-        margin-top: 18px;
-        @include adaptiv(18,12 ,font-size )
-    }
+input[type=submit]:hover {
+    background-color: rgb(58, 145, 226)
+}
 
-    .form_input{
-        // margin: 0 auto;
-        width: 70%;
-    }
+// ==============================================================
 
-    input[type=text], textarea{
-        width: 100%;
-        margin-top: 20px;
-        @include adaptiv(10,4 ,padding );
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        resize: vertical;
-        background-color: #08aeab18;
+.index_logo{
+    margin: 0 auto;
+    overflow: hidden;
+    
+    img{
+        // background-color: #0460eb;
+        @include adaptiv(150,70, width);
     }
+}
 
-
-    .row_submit{
-        margin-top: 20px;
-        display: flex;
-        justify-content: end;
+.hello_title{
+    padding: 20px;
+    padding-top: 0px;
+    margin: 0 auto;
+    @include adaptiv(26,14 , font-size);
+    text-align:center;
+    color: #08aeac;
+    font-weight: bold;
+    
+    div{
+        @include adaptiv(32,24 , font-size);
+        @include adaptiv(40,15 , margin-bottom);
     }
-    input[type=submit] {
+}
+
+.start_button{
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: end;
+
+    button{
         background-color: #0a5eac;
-        @include adaptiv(15,10 ,margin-bottom);
+        font-weight: bold;
+        @include adaptiv(15,10,margin-bottom);
         color: white;
         padding: 20px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        width: 70%;
-        
+        width: 100%;
+        @include adaptiv(28,18,font-size);
     }
-    input[type=submit]:hover {
+    button:hover {
         background-color: rgb(58, 145, 226)
+    }
+}
+
+
+
+.exampeles{
+    background-color: #ffffff;
+    margin: 0px auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    @include adaptiv(400,300, width);
+}
+.exampeles_title{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    @include adaptiv(30,20, height);
+    width: 100%;
+    cursor: pointer;
+    p{
+        margin: auto auto;
+        @include adaptiv(22, 14, font-size);
+        color: #08aeac;
+        font-weight: bold;
     }
 
 }
+
+.exampeles_title:hover{
+    background-color: #08aeac;
+    transition-duration: 1.5s;
+    p{
+        color: white;
+        transition-duration: 1.5s;
+    }
+}
+
+.exampele__person{
+    margin: 20px;
+    display: flex;
+    img {
+        overflow: hidden;
+        margin-left: 20px;
+        @include adaptiv(100, 50, width);
+        @include adaptiv(100, 50, height); 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius:  50%;
+    }
+
+    .user_info{
+        padding-top: 10px;
+        padding-left: 20px;
+        color: #08aeac;
+        @include adaptiv(22, 14, font-size);
+
+        p{
+            color: rgb(85, 80, 80);
+            font-weight: 300;
+            @include adaptiv(16, 12, font-size);
+            @include adaptiv(10, 5 ,margin-top );
+            flex-wrap: wrap;
+            
+
+        }
+    }   
+}
+
 
 
 
