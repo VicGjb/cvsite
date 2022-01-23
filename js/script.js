@@ -1,5 +1,12 @@
 
 $(document).ready(function() {
+    $('.exampeles_title').click(function(event) {
+        $(this).toggleClass('active').next().slideToggle(500);
+        $(this).css('display','flex');
+    });
+});
+
+$(document).ready(function() {
     $('.skills_title').click(function(event) {
         $(this).toggleClass('active').next().slideToggle(500);
         $(this).css('display','flex');
